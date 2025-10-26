@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Middle Finger ASCII</title>
   <style>
     * {
@@ -19,35 +19,38 @@
       background-color: #111;
       color: #fff;
       font-family: monospace;
-      font-size: 2rem;
-      white-space: pre;
     }
 
-    .ascii-art { height: 300px; /* Limit height of the div */ 
-                width: 300px; /* Limit width of the div */ 
-                overflow: auto; /* Allows scroll if the content is too big */ 
-                text-align: center; /* Centers the content in the div */ }
+    .ascii-art {
+      text-align: center;
+      transform: scale(0.7); /* Makes the whole thing smaller */
+      transform-origin: center;
+      line-height: 1.2;
+    }
+
+    .ascii-line {
+      white-space: pre;
+    }
   </style>
 </head>
 <body>
-  <div>
-    <!-- ASCII art middle finger -->
-    ⠀⠀⠀⠀⠀
-     _                         _
-    |_|                       |_|
-    | |         /^^^\         | |
-   _| |_      (| "o" |)      _| |_
- _| | | | _    (_---_)    _ | | | |_ 
-| | | | |' |    _| |_    | `| | | | |
-\          /   /     \   \          /
- \        /  / /(. .)\ \  \        /
-   \    /  / /  | . |  \ \  \    /
-     \  \/ /    ||Y||    \ \/  /
-       \_/      || ||      \_/
-                () ()
-                || ||
-               ooO Ooo
-
+  <div class="ascii-art">
+    <div class="ascii-line">⠀⠀⠀⠀⠀⠀</div>
+    <div class="ascii-line"> _                         _</div>
+    <div class="ascii-line">|_|                       |_|
+    </div>
+    <div class="ascii-line">| |         /^^^\         | |</div>
+    <div class="ascii-line">_| |_      (| "o" |)      _| |_</div>
+    <div class="ascii-line">_| | | | _    (_---_)    _ | | | |_</div>
+    <div class="ascii-line">| | | | |' |    _| |_    | `| | | | |</div>
+    <div class="ascii-line">\          /   /     \   \          /</div>
+    <div class="ascii-line"> \        /  / /(. .)\ \  \        /</div>
+    <div class="ascii-line">   \    /  / /  | . |  \ \  \    /</div>
+    <div class="ascii-line">     \  \/ /    ||Y||    \ \/  /</div>
+    <div class="ascii-line">       \_/      || ||      \_/</div>
+    <div class="ascii-line">                () ()</div>
+    <div class="ascii-line">                || ||</div>
+    <div class="ascii-line">               ooO Ooo</div>
   </div>
 </body>
 </html>
